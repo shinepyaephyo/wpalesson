@@ -134,6 +134,8 @@ return [
     |
     */
 
+    
+
     'providers' => [
 
         /*
@@ -226,6 +228,12 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+    ],
+
+    // CDN
+    'cdn' => [
+        'url' => env('CDN_URL'),
+        'bypass' => env('CDN_BYPASS', false),
     ],
 
 ];

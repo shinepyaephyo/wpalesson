@@ -2,7 +2,7 @@
 	<div>
 		<div id="toolbar">
 			<router-link :to="{ name: 'home' }">
-				<img class="icon" src="/images/logo.png">
+				<img class="icon" :src="logoUrl">
 				<h1>vuebnb</h1>
 			</router-link>
 			<ul class="links">
@@ -36,6 +36,11 @@
 <script>
 	import CustomFooter from './CustomFooter.vue';
 	export default {
+		computed: {
+			logoUrl() {
+				return `${window.cdn_url || ''}images/logo.png`;
+			}
+		},
 		components: {
 			CustomFooter
 		},

@@ -6,12 +6,13 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Vuebnb</title>
 
-	<link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">
-	<link rel="stylesheet" href="{{ asset('css/vue-style.css') }}" type="text/css">
+	<link rel="stylesheet" href="{{ cdn('css/style.css') }}" type="text/css">
+	<link rel="stylesheet" href="{{ cdn('css/vue-style.css') }}" type="text/css">
 
 	<script type="text/javascript">
 		window.vuebnb_server_data = "{!! addslashes(json_encode($data)) !!}"
 		window.csrf_token = "{{ csrf_token() }}"
+		window.cdn_url = "{{ cdn('') }}";
 	</script>
 </head>
 <body>
