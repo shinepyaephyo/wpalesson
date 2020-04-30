@@ -26,7 +26,7 @@
     "ftp": "^0.3.10",
     "ftp-deploy": "^2.3.3",
     "git-push": "^0.1.1",
-    "jquery": "^3.2",
+    "jquery": "^3.5",
     "laravel-mix": "^4.0.7",
     "lodash": "^4.17.13",
     "node-sass": "^4.12.0",
